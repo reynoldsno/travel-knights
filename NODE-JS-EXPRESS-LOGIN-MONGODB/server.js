@@ -17,6 +17,9 @@ app.use(
     httpOnly: true
   })
 );
+
+
+//*********THIS WILL GO INTO api.js***********
 // simple route
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to Travel Knights application." });
