@@ -12,14 +12,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cookieSession({
-    name: "bezkoder-session",
+    name: "Travel_Knights-session",
     secret: "COOKIE_SECRET", // should use as secret environment variable
     httpOnly: true
   })
 );
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "Welcome to Travel Knights application." });
 });
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
